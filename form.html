@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Code Review</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale =1.0">
+</head>
+<!--Raleway-->
+<body>
+	<div class="form-wrapper">
+		<header>
+			<h1>The Code Review</h1>
+			<p class="signup">Signup for our newsletter</p>
+			<p>Get the latest news on how your code is doing right in your inbox</p>
+		</header>
+		<form action="form.html" method="post">
+			<fieldset class="contact-info">
+			<legend>Contact Information</legend>
+			<label for="name">Full Name</label>
+				<input type="text" id="name" name="reader-name" placeholder="Required">
+			<label for="mail">Email Address</label>
+				<input type="email" id="mail" name="reader-email" placeholder="Required">
+			<label for="phone">Phone Number</label>
+				<input type="tel" id="phone" name="reader-phone" placeholder="(xxx)xxx-xxxx">
+			<label for="address">Street Address</label>
+				<input type="text" id="address" name="reader-address">
+			<label for="city">City</label>
+				<input type="text" id="city" name="reader-city">
+			<label for="state">State</label>
+				<select id="state" name="reader-state">
+					<option hidden>Choose state</option>
+					<option value="AL">Alabama</option>
+					<option value="AK">Alaska</option>
+					<option value="AZ">Arizona</option>
+					<option value="AR">Arkansas</option>
+					<option value="CA">California</option>
+					<option value="CO">Colorado</option>
+					<option value="CT">Connecticut</option>
+					<option value="DE">Delaware</option>
+					<option value="DC">District Of Columbia</option>
+					<option value="FL">Florida</option>
+					<option value="GA">Georgia</option>
+					<option value="HI">Hawaii</option>
+					<option value="ID">Idaho</option>
+					<option value="IL">Illinois</option>
+					<option value="IN">Indiana</option>
+					<option value="IA">Iowa</option>
+					<option value="KS">Kansas</option>
+					<option value="KY">Kentucky</option>
+					<option value="LA">Louisiana</option>
+					<option value="ME">Maine</option>
+					<option value="MD">Maryland</option>
+					<option value="MA">Massachusetts</option>
+					<option value="MI">Michigan</option>
+					<option value="MN">Minnesota</option>
+					<option value="MS">Mississippi</option>
+					<option value="MO">Missouri</option>
+					<option value="MT">Montana</option>
+					<option value="NE">Nebraska</option>
+					<option value="NV">Nevada</option>
+					<option value="NH">New Hampshire</option>
+					<option value="NJ">New Jersey</option>
+					<option value="NM">New Mexico</option>
+					<option value="NY">New York</option>
+					<option value="NC">North Carolina</option>
+					<option value="ND">North Dakota</option>
+					<option value="OH">Ohio</option>
+					<option value="OK">Oklahoma</option>
+					<option value="OR">Oregon</option>
+					<option value="PA">Pennsylvania</option>
+					<option value="RI">Rhode Island</option>
+					<option value="SC">South Carolina</option>
+					<option value="SD">South Dakota</option>
+					<option value="TN">Tennessee</option>
+					<option value="TX">Texas</option>
+					<option value="UT">Utah</option>
+					<option value="VT">Vermont</option>
+					<option value="VA">Virginia</option>
+					<option value="WA">Washington</option>
+					<option value="WV">West Virginia</option>
+					<option value="WI">Wisconsin</option>
+					<option value="WY">Wyoming</option>
+				</select>
+			<label for="zip">Zip Code</label>
+				<input type="text" id="zip" name="reader-zip">
+			</fieldset>
+			<fieldset class="newsletter-info">
+			<legend>Newsletter</legend>
+
+			<p>Select the newsletters you would like to receive</p>
+			<input type="checkbox" id="html-news" value="news-choices" name="reader-html"><label for="html-news" class="check">HTML News</label><br>
+			<input type="checkbox" id="css-news" value="news-choices" name="reader-css"><label for="css-news" class="check">CSS News</label><br>
+			<input type="checkbox" id="js-news" value="news-choices" name="reader-js"><label for="js-news" class="check">Javascript News</label><br>
+			<input type="checkbox" id="design-news" value="news-choices" name="reader-design"><label for="design-news" class="check">Design News</label>
+
+			<p>Newsletter format</p>
+				<input type="radio" id="html-type" value="reader-html" name="format-type"><label for="html-type" class="radio">HTML</label><br>
+				<input type="radio" id="plain-type" value="reader-plain" name="format-type"><label for="plain-type" class="radio">Plain text</label>
+
+			<p>Other topics you'd like to hear about</p>
+				<textarea id="misc" name="reader-misc" placeholder="i.e. backend development, Sass, Git"></textarea>
+			</fieldset>
+
+			<button type="submit">Sign Up</button> 
+		</form>
+		<footer>
+			<p>Copyright the Code Review</p>
+		</footer>
+	</div>
+</body>
+</html>
